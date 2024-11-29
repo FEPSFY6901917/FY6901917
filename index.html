@@ -88,8 +88,8 @@ real world all the while having a controlled environment where factor such as ya
     </p>     
     </pre>
         </p>
-         <h3 id=”Part IA: Introduction”>Part IA: Introduction</h3>
-         <p class ="ex1">
+         <h3 id="Part IA: Introduction">Part IA: Introduction</h3>
+         <p id="Part IA:Introduction" class="ex1">
          <pre>
  <p style="font-family: 'Georgia Pro', serif;">
 Automotive Aerodynamics (AA) is the study of the aerodynamics of road vehicles, the vehicles that are going to be of primary focus in this paper are performance automobiles. There are several reasons as to why this
@@ -105,8 +105,9 @@ general vehicle performance and fuel economy (Aerodynamics of road vehicles 5th.
          </pre>
         </p>
              
-       <h3 id=”Part IB: Groundworks and Methods”>Part IB: Groundworks and Methods</h3>
-      <p class ="ex1">
+       <h3 id="Part IB: Groundworks and Methods”>Part IB: Groundworks and Methods</h3>
+           <p id="Part IB: Groundworks and Methods" class="ex1">
+      
         <pre>
     <p style="font-family: 'Georgia Pro', serif;"> 
 Aerodynamics play a holistic role in a car’s performance from engine cooling inlets to wings that generate downforce. Automotive engineers are pressed to design a solution that takes all
@@ -152,11 +153,12 @@ negative sign for the value of the coefficient of lift indicates the directional
   </p>        
         </pre>
        </p>
-        <h3 id=”Part IIA: Aerodynamic devices and effects”>Part IIA: Aerodynamic Devices and Effects</h3>
-         <p class ="ex1">
+        <h3 id="Part IIA: Aerodynamic devices and effects”>Part IIA: Aerodynamic Devices and Effects</h3>
+                    <p id="Part IIA: Aerodynamic devices and effects" class="ex1">
+
          <pre> 
 <p style="font-family: 'Georgia Pro', serif;">
-AA Optimization case study 1: wings
+**AA Optimization case study 1: wings**
 Wings are an aerodynamic device that generates significant downforce and are used to maximise the lateral acceleration and cornering stability of a vehicle (by generating downforce). 
         <hr>
 <img src="Picture2.2.png" alt="Figure 1" width="800" height="500">        
@@ -166,7 +168,7 @@ The figure shows the pressure distribution in a wing profile and how downforce i
 bottom meaning that the airflow at the top surface of the wing is faster than the air at the under surface (where streamline separation is greater). This creates under pressure 
 on the top surface and overpressure in the bottom/under surface. (Huncho r14 p669) The difference between these two pressures results in a net force which is the downforce (Cl inverted).
 
-AA Optimization case study 2: Spoiler
+**AA Optimization case study 2: Spoiler**
 “Spoilers are mouldings on the body or on the underbody that serve to deflect the flow of air toward or away from a defined location.” (Huncho, r15 p677) The primary purpose of a spoiler is to reduce drag.
  </P>
 <hr>
@@ -184,6 +186,36 @@ vehicle) (T. Obidi p196, r17)
 
              </pre>
        </p>
+<!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("Part IA: Introduction");
+    const AnalysisCount = displayWordCount("Part IB: Groundworks and Methods");
+    const AnalysisCount = displayWordCount("Part IIA: Aerodynamic devices and effects");
+      
+    // Calculate the sum of all selected sections
+    const totalWordCount = Part IA: Introduction + Part IB: Groundworks and Methods + Part IIA: Aerodynamic devices and effects;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>     
       <p style="font-family: 'Georgia Pro', serif;">
       <h3 id=”References”>References</h3>
       </p>
