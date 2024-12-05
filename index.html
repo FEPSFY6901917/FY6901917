@@ -1,6 +1,4 @@
-
-    
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 
   <html>
 
@@ -27,12 +25,9 @@
               padding: 8px;
             }
 
-            tr:nth-child(even)
-            background-colour: #dddddd;
+            tr:nth-child(even){
+            background-color:#dddddd;
             }
-
-
-
 
             </style>
         
@@ -45,9 +40,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link  rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"
-      <style>
-    .myslides {display:none;}
-  </style>
+   
     <body style="background-color:#FFFFFF;margin-left:50px;"> 
       <hr>
         <!table of contents>
@@ -88,9 +81,8 @@ real world all the while having a controlled environment where factors such as y
     </pre>
         </p>
          <h3 id="Part IA: Introduction">Part IA: Introduction</h3>
-         <p id="a" class="ex1">
-         <pre>
- <p style="font-family: 'Georgia Pro', serif;">
+ 
+         <pre id="Intro1" class="ex1">
 Automotive Aerodynamics (AA) is the study of the aerodynamics of road vehicles, the vehicles that are going to be of primary focus in this paper are performance automobiles. There are several reasons as to why this
 study is of particular importance the first of which pertains to resale value, market trends and environmental sustainability. In particular the upcoming EU regulations part of
 ‘fit for 55’ package. “The regulation aims to increase carbon dioxide (CO2) emission reductions targets for new cars and vans, so as to ensure that the automotive sector contributes
@@ -98,10 +90,9 @@ to the EU’s climate goals, and to stimulate innovation” (Council of the Euro
 their light-duty and heavy-duty vehicles alike for better fuel economy (FE) and reduced emissions; now put yourself in the perspective of the consumer if you were to opt for a more
 aerodynamically efficient vehicle with a better fuel efficiency that complies with the regulations it would mean that in future when you wish to sell that vehicle it would potentially
 go for higher prices as it is more aligned with the market trend (by having a better fuel efficiency), in other words your investment is more futureproof. AO specifically WTT plays an
-instrumental role in certain practical aspects of aerodynamic development such as vehicle safety and stability (Hucho, 2016, p. 414) as well as general vehicle performance and fuel economy (Hucho, 2016, p. 413).          
- </p>             
+instrumental role in certain practical aspects of aerodynamic development such as vehicle safety and stability (Hucho, 2016, p. 414) as well as general vehicle performance and fuel economy (Hucho, 2016, p. 413).                      
          </pre>
-        </p>
+ 
              
        <h3 id="Part IB: Groundworks and Methods”>Part IB: Groundworks and Methods</h3>
            <p id="b" class="ex1">
@@ -187,7 +178,7 @@ on the top surface and overpressure in the bottom/under surface. (Huncho, 2016, 
         <hr>
  <p style="font-family: 'Georgia Pro', serif;">
 <strong>Figure 3</strong> Influence of rear spoiler and rear wing on rear axle lift and drag in an Audi TT- R DTM racing car in 2001  <strong>Figure 4</strong>: Spoiler and wing configuration of Audi TT-R DTM 2003
-(Huncho, 2016, p. 680)  (Huncho, 2016, p. 679)
+(Huncho, 2016, p. 680)                                                                                                                (Huncho, 2016, p. 679)
      
 {Shows the influence of rear spoiler and rear wing on rear axle lift and drag in an Audi TT- R DTM racing car in 2001. Change in lift, Y-axis (Cl) and change in drag, x-axis (Cd)}
 The section of the data we ought to focus on is the data point number 1 detailing the drag changes (x-axis translation to the left) in comparison to the base model of the Audi TT vehicle. The addition of 
@@ -217,18 +208,18 @@ vehicle). (T. Obidi, 2014, p196)
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("a");
-    const AnalysisCount = displayWordCount("b");
-    const AnalysisCount = displayWordCount("c");
+    const IntroductionCount = displayWordCount("Intro1");
+   
       
     // Calculate the sum of all selected sections
-    const totalWordCount = a + b + c;
+    const totalWordCount = IntroductionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
-</script>     
+</script>
+
       <p style="font-family: 'Georgia Pro', serif;">
       <h3 id=”References”>References</h3>
       </p>
@@ -266,4 +257,6 @@ Mercedes AMG F1, n.d.<i> Downforce and its role in car performance.</i> Availabl
         </head>
          
        </html>
+    
+
     
