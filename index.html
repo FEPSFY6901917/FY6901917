@@ -87,8 +87,7 @@ real world all the while having a controlled environment where factors such as y
     </pre>
         </p>
          <h3 id="Part IA: Introduction">Part IA: Introduction</h3>
-         <p id="a" class="ex1">
-         <pre>
+       <pre id="Intro1" class="ex1">
  <p style="font-family: 'Georgia Pro', serif;">
 Automotive Aerodynamics (AA) is the study of the aerodynamics of road vehicles, the vehicles that are going to be of primary focus in this paper are performance automobiles. There are several reasons as to why this
 study is of particular importance the first of which pertains to resale value, market trends and environmental sustainability. In particular the upcoming EU regulations part of
@@ -216,12 +215,11 @@ vehicle). (T. Obidi, 2014, p196)
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("a");
-    const AnalysisCount = displayWordCount("b");
-    const AnalysisCount = displayWordCount("c");
+    const IntroductionCount = displayWordCount("Intro1");
+    
       
     // Calculate the sum of all selected sections
-    const totalWordCount = a + b + c;
+    const totalWordCount = IntroductionCount; 
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
