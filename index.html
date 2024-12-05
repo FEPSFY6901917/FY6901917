@@ -193,37 +193,7 @@ vehicle). (T. Obidi, 2014, p196)
 
              </pre>
        </p>
-<!-- Placeholder for total word count -->
-<p id="totalWordCount"></p>
-<hr>
-<script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Intro1");
-    const paragraphCount = displayWordCount("Intro2");
-    const AnalysisCount = displayWordCount("Intro3");
 
-      
-    // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + paragraphCount + AnalysisCount; 
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script>     
       <p style="font-family: 'Georgia Pro', serif;">
       <h3 id=”References”>References</h3>
       </p>
@@ -258,7 +228,40 @@ Mercedes AMG F1, n.d.<i> Downforce and its role in car performance.</i> Availabl
 <video src="Automotive Aerodynamics Optimisation3.mp4" width="800" height="450" controls>
 </video>
 
-  <!-- Last commit time display -->
+
+<!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("Intro1");
+    const paragraphCount = displayWordCount("Intro2");
+    const AnalysisCount = displayWordCount("Intro3");
+
+      
+    // Calculate the sum of all selected sections
+    const totalWordCount = IntroductionCount + paragraphCount + AnalysisCount; 
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>                
+      
+      <!-- Last commit time display -->
 <div id="last-updated">Loading last update time...</div>
 <!-- Verify Button -->
 <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
